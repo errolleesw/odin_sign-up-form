@@ -1,0 +1,143 @@
+:root {
+  --color-primary: #6a9e05;
+  --color-secondary: #0f0;
+  --color-tertiary: #00f;
+  --color-background: #f9fafb;
+  --color-text: #000000;
+}
+
+body {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#left {
+  /* flex:1;
+  overflow: hidden */
+  display: flex;
+  flex: 1;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#left #logo-container {
+  display: flex;
+  width: 100%;
+  /* margin-top: 1rem; */
+  /* align-items: center;
+  justify-content: center; */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#right {
+  flex: 2;
+}
+#first-section {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  flex: 1;
+  padding: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 900
+}
+
+#second-section {
+  background-color: white;
+  color: var(--color-text);
+  flex: 1;
+  padding: 2.5rem;
+}
+
+#third-section {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  flex: 1;
+  padding: 2.5rem;
+}
+
+button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 3rem;
+  margin: 1rem 0rem;
+}
+
+form {
+  background-color: white;
+}
+
+fieldset {
+  border: none;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.form-container label {
+  grid-column: 1 / span 1;
+}
+
+.form-container input {
+  grid-column: 1 / span 1;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 0rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  /* margin-bottom: 1rem; */
+  padding: 0rem 0rem;
+}
+
+#logo-container img {
+  width: 100px;
+  height: 100px;
+  /* margin-right: 1rem; */
+}
+
+#logo-container p {
+  font-family: Skranji;
+  color: white;
+  font-size: 4rem;
+}
