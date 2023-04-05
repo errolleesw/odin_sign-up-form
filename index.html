@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.js" defer></script>
   <link rel="stylesheet" href="./css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
@@ -27,29 +27,43 @@
       <p>You <em>know</em> you want to.</p>
     </div>
     <div id="second-section">
-      <form action="index.html" method="post">
+      <form id="myForm" action="" method="post">
         <h1>Let's do this!</h1>
         <fieldset class="form-container">
-          <label for="first-name">First Name</label>
-          <input type="text" name="first-name" id="first-name">
-          <label for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="last-name">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password">
-          <label for="confirm-password">Confirm Password</label>
-          <input type="password" name="confirm-password" id="confirm-password">
-   
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <span id="passwordError" class="error"></span>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirmPassword">
+          </div>
         </fieldset>
+        <button type="submit">Create Account</button>
       </form>
     </div>
     <div id="third-section">
-      <button>Create Account</button>
+      <button type="submit">Create Account</button>
       <p>Already have an account? <a href="#">Log in</a></p>
     </div>
   </div>
-
 </body>
 
 </html>
