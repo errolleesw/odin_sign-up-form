@@ -81,15 +81,16 @@ fieldset {
 .form-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
-.form-container label {
-  grid-column: 1 / span 1;
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
-.form-container input {
-  grid-column: 1 / span 1;
+.form-group label {
+  margin-bottom: 5px;
 }
 
 label {
@@ -140,4 +141,10 @@ a {
   font-family: Skranji;
   color: white;
   font-size: 4rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  display: none;
 }
